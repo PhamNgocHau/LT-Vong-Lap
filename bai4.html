@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<p> Hiển thị số trong dãy fibonacci đầu tiên % 5</p>
+<script>
+    let a = 1 , b = 0 , temp;
+    for (i = 0 ; i < 20 ; i++){
+        temp = a + b;
+        a = b;
+        b = temp;
+        if(temp % 5 === 0){
+            document.write(temp);
+            break;
+        }
+    }
+</script>
+</body>
+</html>
